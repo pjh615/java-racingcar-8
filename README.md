@@ -184,7 +184,7 @@ Randoms.pickNumberInRange(0, 9);
 |          Car          |        getName        |       |        |             |
 |           -           |         move          |       |        |             |
 |           -           |      getPosition      |       |        |             |
-|    GameController     |       startGame       |       |        |             |
+|    GameController     |       gameStart       |       |        |             |
 
 ## Commit convention
 
