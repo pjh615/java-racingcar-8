@@ -170,21 +170,21 @@ Randoms.pickNumberInRange(0, 9);
 
 ### 기능 명세
 
-|         Class         |        Method         | Input | Output | Description |
-|:---------------------:|:---------------------:|:-----:|:------:|:-----------:|
-|       InputView       |     inputCarNames     |       |        |             |
-|           -           |   inputAttemptCount   |       |        |             |
-|      OutputView       |     displayStart      |       |        |             |
-|           -           | displayResultsByOrder |       |        |             |
-|           -           |     displayWinner     |       |        |             |
-|       Validator       |   isOver5Characters   |       |        |             |
-|           -           |      isNegative       |       |        |             |
-|        Parser         |   parseByDelimiter    |       |        |             |
-| RandomNumberGenerator | randomNumberGenerate  |       |        |             |
-|          Car          |        getName        |       |        |             |
-|           -           |         move          |       |        |             |
-|           -           |      getPosition      |       |        |             |
-|    GameController     |       gameStart       |       |        |             |
+|         Class         |        Method         | Input  |    Output    |             Description              |
+|:---------------------:|:---------------------:|:------:|:------------:|:------------------------------------:|
+|       InputView       |     inputCarNames     |   -    |    String    | 유저로부터 차의 이름과 쉼표(,)로 이루어진 문자열을 입력받는다. |
+|           -           |   inputAttemptCount   |   -    |    String    |         유저로부터 시도 횟수를 입력 받는다.         |
+|      OutputView       |     displayStart      |   -    |      -       |           경주 시작 메시지를 출력한다.           |
+|           -           | displayResultsByOrder |   -    |      -       |           경주 진행 상황을 출력한다.            |
+|           -           |     displayWinner     |   -    |      -       |            최종 우승자를 출력한다.             |
+|       Validator       |   isOver5Characters   | String |      -       |        차의 이름이 5자를 초과하는지 검사한다.        |
+|           -           |      isNegative       | String |      -       |          시도 횟수가 음수인지 검사한다.           |
+|        Parser         |   parseByDelimiter    | String | List<String> |         쉼표를 기준으로 차 이름을 파싱한다.         |
+| RandomNumberGenerator | randomNumberGenerate  |   -    |     int      |        [0,9]의 정수를 랜덤으로 생성한다.         |
+|          Car          |        getName        |   -    |    String    |             차의 이름을 가져온다.             |
+|           -           |         move          |   -    |      -       |             차가 한 칸 전진한다.             |
+|           -           |      getPosition      |   -    |     int      |           차의 현재 위치를 가져온다.            |
+|    GameController     |       gameStart       |   -    |      -       |          경주를 실행하는 주요 로직이다.           |
 
 ## Commit convention
 
