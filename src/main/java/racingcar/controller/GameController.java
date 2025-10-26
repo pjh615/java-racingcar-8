@@ -30,9 +30,11 @@ public class GameController {
     public void gameStart() {
         String carNamesInput = inputView.inputCarNames();
         List<String> carNames = parser.parseByDelimiter(carNamesInput);
+        validator.isOver5Characters(carNames);
 
         String attemptCountInput = inputView.inputAttemptCount();
         int attemptCount = converter.stringToInt(attemptCountInput);
+        validator.isNegative(attemptCount);
 
         outputView.displayStart();
         raceService.init(carNames);
