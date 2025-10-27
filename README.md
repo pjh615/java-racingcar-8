@@ -166,6 +166,7 @@ Randoms.pickNumberInRange(0, 9);
 #### 잘못된 입력
 
 - 구분자인 쉼표(,)를 기준으로 자동차 이름이 5자 초과인 입력
+- 중복된 자동차 이름을 입력
 - 시도할 횟수의 입력이 음수로 입력
 
 ### 기능 명세
@@ -178,6 +179,7 @@ Randoms.pickNumberInRange(0, 9);
 |           -           | displayResultsByOrder |              |       -       |              경주 진행 상황을 출력한다.               |
 |           -           |     displayWinner     |              |       -       |               최종 우승자를 출력한다.                |
 |       Validator       |   isOver5Characters   | List<String> |       -       |           차의 이름이 5자를 초과하는지 검사한다.           |
+|           -           |    isDuplicateName    | List<String> |       -       |          차의 이름중 중복되는 것이 있는지 검사한다.          |
 |           -           |      isNegative       |     int      |       -       |             시도 횟수가 음수인지 검사한다.              |
 |        Parser         |   parseByDelimiter    |    String    | List<String>  |            쉼표를 기준으로 차 이름을 파싱한다.            |
 |       Converter       |      stringToInt      |    String    |      int      |             입력된 문자를 정수로 변환한다.              |
