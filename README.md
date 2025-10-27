@@ -177,8 +177,8 @@ Randoms.pickNumberInRange(0, 9);
 |      OutputView       |     displayStart      |      -       |       -       |              경주 시작 메시지를 출력한다.              |
 |           -           | displayResultsByOrder |              |       -       |              경주 진행 상황을 출력한다.               |
 |           -           |     displayWinner     |              |       -       |               최종 우승자를 출력한다.                |
-|       Validator       |   isOver5Characters   |    String    |       -       |           차의 이름이 5자를 초과하는지 검사한다.           |
-|           -           |      isNegative       |    String    |       -       |             시도 횟수가 음수인지 검사한다.              |
+|       Validator       |   isOver5Characters   | List<String> |       -       |           차의 이름이 5자를 초과하는지 검사한다.           |
+|           -           |      isNegative       |     int      |       -       |             시도 횟수가 음수인지 검사한다.              |
 |        Parser         |   parseByDelimiter    |    String    | List<String>  |            쉼표를 기준으로 차 이름을 파싱한다.            |
 |       Converter       |      stringToInt      |    String    |      int      |             입력된 문자를 정수로 변환한다.              |
 | RandomNumberGenerator | randomNumberGenerate  |      -       |      int      |           [0,9]의 정수를 랜덤으로 생성한다.            |
