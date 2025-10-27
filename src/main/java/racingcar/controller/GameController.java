@@ -31,6 +31,7 @@ public class GameController {
         String carNamesInput = inputView.inputCarNames();
         List<String> carNames = parser.parseByDelimiter(carNamesInput);
         validator.isOver5Characters(carNames);
+        validator.isDuplicateName(carNames);
 
         String attemptCountInput = inputView.inputAttemptCount();
         int attemptCount = converter.stringToInt(attemptCountInput);
